@@ -1,0 +1,36 @@
+{
+  "name": "mylgeorge/laravel-passport",
+  "type": "library",
+  "description": "Hashed Credentials in Laravel Passport",
+  "keywords": ["Passport", "laravel", "package"],
+  "license": "MIT",
+  "homepage": "https://github.com/mylgeorge/laravel-passport",
+  "authors": [
+    {
+      "name": "Mylonas Giorgos",
+      "email": "mylgeorge@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "laravel/passport": "^6.0",
+    "hashids/hashids": "^3.0",
+    "vinkla/hashids": "^5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": { "Passport\\": "src" }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Passport\\Providers\\PassportServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  }
+}
